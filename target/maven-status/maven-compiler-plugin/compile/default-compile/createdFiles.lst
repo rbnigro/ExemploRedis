@@ -1,0 +1,5 @@
+com\ronney\cache\CacheApplication.class
+com\ronney\cache\entity\Empresa.class
+com\ronney\cache\controller\EmpresaController.class
+com\ronney\cache\repository\EmpresaRepository.class
+com\ronney\cache\service\EmpresaService.class
