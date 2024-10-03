@@ -16,7 +16,12 @@ public class EmpresaService {
     private EmpresaRepository empresaRepository;
 
     @Cacheable("empresas")
-    public List<Empresa> finadAll() {
+    public List<Empresa> finadAllComCache() {
+        return findAll();
+    }
+
+    public List<Empresa> findAll() {
         return (List<Empresa>) empresaRepository.findAll();
     }
+
 }

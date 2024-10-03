@@ -8,7 +8,7 @@ DECLARE
 BEGIN
     SELECT COUNT(*) INTO registros FROM empresa;
     IF registros = 0 THEN
-        FOR cont IN 1..300000 LOOP
+        FOR cont IN 1..10000 LOOP
             INSERT INTO empresa (id, nome)
             VALUES (cont, CONCAT(''Empresa '', cont));
         END LOOP;

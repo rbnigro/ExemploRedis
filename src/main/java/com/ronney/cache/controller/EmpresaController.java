@@ -19,6 +19,6 @@ public class EmpresaController {
 
     @GetMapping("/cosulta")
     public ResponseEntity<List<Empresa>> findAll() {
-        return ResponseEntity.ok(empresaService.finadAll());
+        return ResponseEntity.ok(empresaService.findAll());
     }
 }
